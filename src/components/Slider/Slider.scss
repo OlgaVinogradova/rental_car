@@ -1,0 +1,123 @@
+.slider_wrap {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .slider_wrap {
+    display: flex;
+    flex: 1 1 48%;
+  }
+
+  .sliderCard_wrap {
+    display: flex;
+    height: 100vh;
+    width: 48vw;
+    background: url(../img/parking.png) no-repeat center;
+    background-size: cover;
+    justify-content: space-between;
+  }
+
+  .sliderCard_content {
+    display: flex;
+    margin: 240px 32px 0 32px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .content__subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #eee;
+    margin-bottom: 32px;
+  }
+  
+  .content__btn {
+  
+    .btn {
+      width: 164px;
+      height: 48px;
+      border-radius: 4px;
+      border: none;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+      color: #eee;
+      cursor: pointer;
+    }
+  }
+  
+  .sliderCard_content__ellipse {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .ellipse {
+      width: 8px;
+      height: 8px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      background-color: #fff;
+      margin: 4px;
+      cursor: pointer;
+    }
+
+    
+    .ellipse:hover {
+      border: 1px solid #0EC261;
+      background-color: #0EC261;
+      }
+
+      .ellipse:active {
+        border: 1px solid #0EC261;
+        background-color: #0EC261;
+      }
+  }
+
+  .arrow__btn {
+    width: 64px;
+    flex: 0 0 64px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .arrow__left,
+    .arrow__right {
+      width: 18px;
+      height: 18px;
+      border: 3px solid;
+      border-color: #eee;
+      transform: rotate(-45deg);
+    }
+
+    .arrow__left {
+      border-bottom: none;
+      border-right: none;
+    }
+    
+    .arrow__right {
+      border-top: none;
+      border-left: none;
+    }
+  }
+
+  .arrow__btn:hover {
+    background: rgba(14, 194, 97, .2);
+  }
+}
