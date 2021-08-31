@@ -8,47 +8,13 @@
 }
 
 .mp__container {
-  margin: 16px;
+  margin: 32px 16px 16px 16px;
   display: flex;
   flex-direction: column;
-}
-
-.mp__top {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-bottom: 32px;
-
-  .name {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
-    color: #0EC261;
-    margin-bottom: 8px;
-  }
-  
-  .location {
-    display: flex;
-    align-items: center
-  }
-  
-  .location__name {
-    color: #999999;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-  }
-  
-  .location__icon {
-    fill: #999999;
-    width: 16px;
-    height: auto;
-  }
-
 }
 
 .mp__content {
-  margin: 0 16px 16px 32px;
+  margin: 0px 16px 16px 32px;
   flex: 1 1 auto;
 }
 
@@ -79,42 +45,21 @@
 .mp__btn {
   margin: 0 0 172px 0;
   flex: 1 1 auto;
-  .btn {
-    width: 100%;
-    height: 48px;
-    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);  
-    background-blend-mode: darken;
-    border: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    cursor: pointer;
-  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
   .mp__wrap {
     margin-left: 88px;
   }
   .mp__container {
-    margin: 32px 32px 0 32px;
+    margin: 164px 32px 0 32px;
     display: flex;
     flex-direction: column;
   }
   
-  .mp__top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 64px;
-  }
-  
   .mp__content {
-    margin: 0 0 64px 0;
+    margin: 0px 0 64px 0;
   }
   
   .mp__content__title,
@@ -144,12 +89,6 @@
   
   .mp__btn {
     margin: 0 32px 224px 32px;
-
-    .btn {
-      width: 256px;
-      height: 48px;
-      border-radius: 8px;
-    }
   }
 }
 
@@ -163,21 +102,13 @@
   }
 
   .mp__container {
-    margin: 32px 32px 0 32px;
+    margin: 164px 32px 0 32px;
     display: flex;
     flex-direction: column;
   }
   
-  .mp__top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 64px;
-  }
-  
   .mp__content {
-    margin: 0 0 64px 0;
+    margin: 0px 0 64px 0;
   }
   
   .mp__content__title,
@@ -207,11 +138,5 @@
   
   .mp__btn {
     margin: 0 32px 32px 32px;
-
-    .btn {
-      width: 256px;
-      height: 48px;
-      border-radius: 8px;
-    }
   }
 }

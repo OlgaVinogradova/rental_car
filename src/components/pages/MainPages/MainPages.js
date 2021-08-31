@@ -1,26 +1,23 @@
 import React from 'react';
+import BookingBtn from '../../button/BookingBtn';
 import Footer from '../../Footer/Footer';
-import LocationIcon from '../../svg/locationIcon';
+import Header from '../../Header/Header';
 import './MainPages.scss';
 
-function MainPages() {
+const MainPages = () => {
   return (
     <div className='mp__wrap'>
+      <Header />
       <div className='mp__container'>
-        <div className='mp__top'>
-          <div className='name'>Need for drive</div>
-          <div className='location'>
-            <LocationIcon />
-            <span className='location__name'>Ульяновск</span>
-          </div>
-        </div>
         <div className='mp__content'>
           <div className='mp__content__title'>Каршеринг</div>
           <div className='mp__content__name'>Need for drive</div>
           <h2 className='mp__content__subtitle'>Поминутная аренда авто твоего города</h2>
         </div>
       </div>
-      <div className='mp__btn'><button className='btn'>Забронировать</button></div>
+      <div className='mp__btn'>
+        <BookingBtn />
+      </div>
       <Footer />
     </div>
   )

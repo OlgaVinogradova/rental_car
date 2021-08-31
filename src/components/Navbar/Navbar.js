@@ -13,15 +13,17 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
+  const burgerOpen = click ? 'burgerMenu__open' : 'burgerMenu__close';
+
   return (
     <nav className={click ? 'navbar__a' : 'navbar'}>
       <div className="navbar__burgerMenu"
         role="button"
         onClick={handleClick}>
-        <span className={click ? 'burgerMenu__open' : 'burgerMenu__close'}></span>
-        <span className={click ? 'burgerMenu__open' : 'burgerMenu__close'}></span>
-        <span className={click ? 'burgerMenu__open' : 'burgerMenu__close'}></span>
-        <span className={click ? 'burgerMenu__open' : 'burgerMenu__close'}></span>
+        <span className={burgerOpen}></span>
+        <span className={burgerOpen}></span>
+        <span className={burgerOpen}></span>
+        <span className={burgerOpen}></span>
       </div>
       <div className={click ? 'navbar__menu_active' : 'navbar__menu'}>
         <div className='menu__container'>

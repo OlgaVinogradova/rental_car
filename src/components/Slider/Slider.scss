@@ -13,10 +13,13 @@
     display: flex;
     height: 100vh;
     width: 48vw;
-    background: url(../img/parking.png) no-repeat center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/parking.png);
+    background-position: center;
     background-size: cover;
     justify-content: space-between;
   }
+
+
 
   .sliderCard_content {
     display: flex;

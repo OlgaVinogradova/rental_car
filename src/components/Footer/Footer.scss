@@ -17,12 +17,22 @@
 
 .footer__text {
   @extend %small-text;
-  color: #999999;
+  color: #eeeeee;
 }
 
 .footer__tel {
   @extend %small-text;
   color: #0EC261;
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  &:hover {
+    color: #eeeeee;
+  }
+
+  &:active {
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -36,7 +46,20 @@
   margin: 24px 32px;
   }
 
+  .footer__text {
+    color: #999999;
+  }
+
   .footer__tel {
     color: #121212;
+    margin-bottom: 0;
+
+    &:hover {
+      color: #0EC261;
+    }
+  
+    &:active {
+      color: #0EC261;
+    }
   }
 }

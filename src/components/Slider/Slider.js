@@ -1,5 +1,4 @@
 import React from 'react';
-import { PagesData } from '../helper/PagesData';
 import SliderCard from './SliderCard';
 
 import './Slider.scss'
