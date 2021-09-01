@@ -3,9 +3,7 @@ import SliderCard from './SliderCard';
 
 import './Slider.scss'
 
-
-function Slider() {
-
+const Slider = () => {
   return (
     <div className='slider_wrap'>
       <SliderCard />

@@ -9,7 +9,7 @@
     flex: 1 1 48%;
   }
 
-  .sliderCard_wrap {
+ .sliderCard_wrap {
     display: flex;
     height: 100vh;
     width: 48vw;
@@ -18,8 +18,6 @@
     background-size: cover;
     justify-content: space-between;
   }
-
-
 
   .sliderCard_content {
     display: flex;
@@ -48,19 +46,15 @@
     color: #eee;
     margin-bottom: 32px;
   }
-  
-  .content__btn {
-  
-    .btn {
-      width: 164px;
-      height: 48px;
-      border-radius: 4px;
-      border: none;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 21px;
-      color: #eee;
-      cursor: pointer;
+
+  .btn__slider {
+    width: 164px;
+    border-radius: 4px;
+    color: #eee;
+    background: linear-gradient(90deg, #13493F 20%, #0c7b1b 100%);
+
+    &:hover {
+      background: linear-gradient(90deg, #071f1b 40%, #096015 140%);
     }
   }
   
@@ -78,20 +72,26 @@
       background-color: #fff;
       margin: 4px;
       cursor: pointer;
-    }
 
-    
-    .ellipse:hover {
-      border: 1px solid #0EC261;
-      background-color: #0EC261;
-      }
-
-      .ellipse:active {
+      &:hover {
         border: 1px solid #0EC261;
         background-color: #0EC261;
-      }
+        }
+  
+      &:active {
+          border: 1px solid #0EC261;
+          background-color: #0EC261;
+        }
+    }
   }
 
+  .slide {
+    opacity: 0;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
   .arrow__btn {
     width: 64px;
     flex: 0 0 64px;
@@ -118,9 +118,9 @@
       border-top: none;
       border-left: none;
     }
-  }
 
-  .arrow__btn:hover {
-    background: rgba(14, 194, 97, .2);
+    &:hover {
+      background: rgba(14, 194, 97, .2);
+    }
   }
 }

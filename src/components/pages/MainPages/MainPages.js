@@ -1,7 +1,7 @@
 import React from 'react';
-import BookingBtn from '../../button/BookingBtn';
 import Footer from '../../Footer/Footer';
 import Header from '../../Header/Header';
+import Button from '../../button/Button';
 import './MainPages.scss';
 
 const MainPages = () => {
@@ -16,7 +16,7 @@ const MainPages = () => {
         </div>
       </div>
       <div className='mp__btn'>
-        <BookingBtn />
+        <Button className='btn'>Забронировать</Button>
       </div>
       <Footer />
     </div>

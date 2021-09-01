@@ -45,6 +45,20 @@
 .mp__btn {
   margin: 0 0 172px 0;
   flex: 1 1 auto;
+
+  .btn {
+    width: 100%;
+    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%); 
+    background-blend-mode: darken;
+    
+  &:hover {
+    background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
+  }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -84,11 +98,15 @@
     font-size: 26px;
     line-height: 30px;
     color: #999999;
-    margin-bottom: 64px;
   }
   
   .mp__btn {
-    margin: 0 32px 224px 32px;
+    margin: 0 32px 32px 32px;
+
+    .btn {
+      width: auto;
+      border-radius: 8px;
+    }
   }
 }
 
@@ -133,10 +151,14 @@
     font-size: 26px;
     line-height: 30px;
     color: #999999;
-    margin-bottom: 64px;
   }
   
   .mp__btn {
     margin: 0 32px 32px 32px;
+
+    .btn {
+      width: auto;
+      border-radius: 8px;
+    }
   }
 }
