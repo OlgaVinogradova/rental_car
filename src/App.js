@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import MainPages from './components/pages/MainPages/MainPages';
+import Parking from './components/pages/Parking';
+import Insurance from './components/pages/Insurance';
+import Petrol from './components/pages/Petrol';
+import Service from './components/pages/Service';
+import Slider from './components/Slider/Slider';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='wrapper'>
+      <Router>
+
+        <Navbar />
+        <div className='wrap__row'>
+          <MainPages />
+          <Slider />
+        </div>
+        <Switch>
+          <Route path='/parking' component={Parking} />
+          <Route path='/insurance' component={Insurance} />
+          <Route path='/petrol' component={Petrol} />
+          <Route path='/service' component={Service} />
+        </Switch>
+      </Router>
     </div>
   );
 }
