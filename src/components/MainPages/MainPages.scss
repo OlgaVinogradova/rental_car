@@ -64,10 +64,10 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
   .mp__wrap {
-    margin-left: 88px;
+    margin: 0 32px 0 120px;
   }
   .mp__container {
-    margin: 164px 32px 0 32px;
+    margin: 164px 0 0 0;
     display: flex;
     flex-direction: column;
   }
@@ -101,7 +101,7 @@
   }
   
   .mp__btn {
-    margin: 0 32px 32px 32px;
+    margin: 0 0 32px 0;
 
     .btn {
       width: auto;
@@ -114,13 +114,12 @@
   .mp__wrap {
     width: 52vw;
     flex: 1 1 52%;
-    margin-left: 64px;
+    margin: 0 32px 0 96px;
     display: flex;
 
   }
 
   .mp__container {
-    margin: 164px 32px 0 32px;
     display: flex;
     flex-direction: column;
   }
@@ -154,7 +153,7 @@
   }
   
   .mp__btn {
-    margin: 0 32px 32px 32px;
+    margin: 0 0 32px 0;
 
     .btn {
       width: auto;

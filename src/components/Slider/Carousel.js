@@ -6,14 +6,14 @@ import './Carousel.scss'
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const lenght = PagesData.lenght;
+  const length = PagesData.length;
 
   const nextSlide = () => {
-    setActiveIndex(activeIndex === lenght ? 0 : activeIndex + 1);
+    setActiveIndex(activeIndex === length - 1 ? 0 : activeIndex + 1);
   };
 
   const prevSlide = () => {
-    setActiveIndex(activeIndex < 1 ? lenght : activeIndex - 1);
+    setActiveIndex(activeIndex < 1 ? length - 1 : activeIndex - 1);
   };
 
   const moveDot = (index) => {
@@ -55,7 +55,7 @@ const Carousel = () => {
       </div>
 
       <div className='all-dots'>
-        {Array.from({ length: 4 }).map((item, index) => (
+        {Array.from({ length }).map((item, index) => (
           <div
             key={index}
             className={activeIndex === index ? 'dot active-dot' : 'dot'}
