@@ -15,7 +15,7 @@ const SliderCard = ({ imgPath, title, text, btnColor }) => {
             {text}
           </div>
           <Button className='btn__slider'
-            style={{ background: { btnColor } }}
+            style={{ background: btnColor }}
           >Подробнее</Button>
         </div>
       </div>

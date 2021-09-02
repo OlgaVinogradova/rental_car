@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Btn.scss';
 
-const Button = ({ children, onClick, className }) => {
+const Button = ({ children, onClick, className, style }) => {
   const classes = classNames(
     'btn',
     className
   );
   return (
-    <button className={classes} onClick={onClick}>{children}</button>
+    <button className={classes} onClick={onClick} style={style}>{children}</button>
   );
 };
 Button.propTypes = {
@@ -19,6 +19,9 @@ Button.propTypes = {
   ]),
   onClick: PropTypes.func,
   className: PropTypes.string,
+  style: PropTypes.shape({
+    background: PropTypes.string,
+  })
 };
 
 Button.defaultProps = {

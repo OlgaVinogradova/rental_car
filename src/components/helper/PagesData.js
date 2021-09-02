@@ -11,7 +11,7 @@ export const PagesData = [
     name: 'парковка',
     path: '/parking',
     imgPath: parking,
-    btncolor: "linear-gradient(90deg, #13493F 0%, #0C7B1B 100%)"
+    btnColor: "linear-gradient(90deg, #13493F 0%, #0C7B1B 100%)"
   },
   {
     title: 'Страховка',
