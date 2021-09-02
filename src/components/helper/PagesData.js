@@ -1,11 +1,16 @@
+import parking from '../../assets/image/parking.png';
+import insurance from '../../assets/image/insurance.png';
+import petrol from '../../assets/image/petrol.png';
+import service from '../../assets/image/service.png';
+
+
 export const PagesData = [
   {
     title: 'Бесплатная парковка',
     text: 'Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.',
     name: 'парковка',
     path: '/parking',
-    imgPath: "../img/parking.png",
-
+    imgPath: parking,
     btncolor: "linear-gradient(90deg, #13493F 0%, #0C7B1B 100%)"
   },
   {
@@ -13,7 +18,7 @@ export const PagesData = [
     text: 'Полная страховка автомобиля',
     name: 'страховка',
     path: '/insurance',
-    imgPath: "../img/insurance.png",
+    imgPath: insurance,
     btnColor: 'linear-gradient(90deg, #132949 0%, #0C7B67 100%)'
   },
   {
@@ -21,7 +26,7 @@ export const PagesData = [
     text: 'Полный бак на любой заправке города за наш счёт',
     name: 'бензин',
     path: '/petrol',
-    imgPath: "../img/petrol.png",
+    imgPath: petrol,
     btnColor: 'linear-gradient(90deg, #493013 0%, #7B0C3B 100%)'
   },
   {
@@ -29,7 +34,7 @@ export const PagesData = [
     text: 'Автомобиль проходит еженедельное ТО',
     name: 'обслуживание',
     path: '/service',
-    imgPath: "../img/service.png",
+    imgPath: service,
     btnColor: 'linear-gradient(90deg, #281349 0%, #720C7B 100%)'
   }
 ]
