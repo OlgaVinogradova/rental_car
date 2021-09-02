@@ -16,6 +16,11 @@ const Carousel = () => {
     setActiveIndex(activeIndex < 1 ? lenght : activeIndex - 1);
   };
 
+  const moveDot = (index) => {
+    setActiveIndex(index)
+  };
+
+
   return (
     <div className='carousel'>
       {PagesData.map((slide, index) => {
@@ -54,7 +59,7 @@ const Carousel = () => {
           <div
             key={index}
             className={activeIndex === index ? 'dot active-dot' : 'dot'}
-            onClick={(activeIndex) => setActiveIndex(activeIndex)}
+            onClick={() => moveDot(index)}
           />
         ))}
       </div>
