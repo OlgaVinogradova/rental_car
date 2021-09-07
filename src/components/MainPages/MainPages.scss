@@ -48,16 +48,17 @@
 
   .btn {
     width: 100%;
-    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%); 
-    background-blend-mode: darken;
+  //   background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%); 
+  //   background-blend-mode: darken;
     
-  &:hover {
-    background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
-  }
+  // &:hover {
+  //   background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+  // }
 
-  &:active {
-    background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
-  }
+  // &:active {
+  //   background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
+  // }
+
   }
 }
 
@@ -66,6 +67,7 @@
   .mp__wrap {
     margin: 0 32px 0 120px;
   }
+
   .mp__container {
     margin: 164px 0 0 0;
     display: flex;
@@ -73,7 +75,7 @@
   }
   
   .mp__content {
-    margin: 0px 0 64px 0;
+    margin: 0px 0 48px 0;
   }
   
   .mp__content__title,
@@ -116,16 +118,16 @@
     flex: 1 1 52%;
     margin: 0 32px 0 96px;
     display: flex;
-
   }
 
   .mp__container {
+    margin: 164px 0 0 0;
     display: flex;
     flex-direction: column;
   }
   
   .mp__content {
-    margin: 0px 0 64px 0;
+    margin: 0px 0 48px 0;
   }
   
   .mp__content__title,

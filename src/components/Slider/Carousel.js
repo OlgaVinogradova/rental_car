@@ -35,6 +35,7 @@ const Carousel = () => {
                 text={slide.text}
                 imgPath={slide.imgPath}
                 btnColor={slide.btnColor}
+                btnColorHover={slide.btnColorHover}
               />
             )}
           </div>

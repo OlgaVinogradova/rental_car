@@ -11,7 +11,8 @@ export const PagesData = [
     name: 'парковка',
     path: '/parking',
     imgPath: parking,
-    btnColor: "linear-gradient(90deg, #13493F 0%, #0C7B1B 100%)"
+    btnColor: 'linear-gradient(90deg, #13493F 0%, #0C7B1B 100%)',
+    btnColorHover: 'linear-gradient(90deg, #0c3029 0%, #0b5c15 100%)'
   },
   {
     title: 'Страховка',
@@ -19,7 +20,8 @@ export const PagesData = [
     name: 'страховка',
     path: '/insurance',
     imgPath: insurance,
-    btnColor: 'linear-gradient(90deg, #132949 0%, #0C7B67 100%)'
+    btnColor: 'linear-gradient(90deg, #132949 0%, #0C7B67 100%)',
+    btnColorHover: 'linear-gradient(90deg, #11223c 0%, #076251 100%)'
   },
   {
     title: 'Бензин',
@@ -27,7 +29,8 @@ export const PagesData = [
     name: 'бензин',
     path: '/petrol',
     imgPath: petrol,
-    btnColor: 'linear-gradient(90deg, #493013 0%, #7B0C3B 100%)'
+    btnColor: 'linear-gradient(90deg, #493013 0%, #7B0C3B 100%)',
+    btnColorHover: 'linear-gradient(90deg, #3a260f 0%, #60052b 100%)'
   },
   {
     title: 'Обслуживание',
@@ -35,6 +38,7 @@ export const PagesData = [
     name: 'обслуживание',
     path: '/service',
     imgPath: service,
-    btnColor: 'linear-gradient(90deg, #281349 0%, #720C7B 100%)'
+    btnColor: 'linear-gradient(90deg, #281349 0%, #720C7B 100%)',
+    btnColorHover: 'linear-gradient(90deg, #1a0c30 0%, #4f0756 100%)'
   }
 ]

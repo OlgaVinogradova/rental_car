@@ -12,8 +12,8 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route to='/' exact component={HomePage} />
-          <Route to='/order_page' component={OrderPage} />
+          <Route path='/' exact component={HomePage} />
+          <Route path='/orderpage' component={OrderPage} />
         </Switch>
       </Router>
     </div>

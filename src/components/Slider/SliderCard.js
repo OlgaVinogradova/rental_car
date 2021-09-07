@@ -6,18 +6,7 @@ import './Slider.scss'
 
 
 
-const SliderCard = ({ imgPath, title, text, btnColor }) => {
-
-  const [inHover, setHover] = useState(false);
-
-  let stylesBtnHover = {
-    background: btnColor,
-    boxShadow: '0 0 0 128px rgba(0, 0, 0, 0.2) inset'
-  }
-
-  let stylesBtn = {
-    background: btnColor
-  }
+const SliderCard = ({ imgPath, title, text, btnColor, btnColorHover }) => {
 
   let stylesImg = {
     backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(' + imgPath + ')',
@@ -33,10 +22,10 @@ const SliderCard = ({ imgPath, title, text, btnColor }) => {
             {text}
           </div>
           <Button className='btn__slider'
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-
-            style={inHover ? stylesBtnHover : stylesBtn}
+            style={{
+              '--main-bg-color': btnColor,
+              '--hover-bg-color': btnColorHover,
+            }}
           >Подробнее</Button>
         </div>
       </div>

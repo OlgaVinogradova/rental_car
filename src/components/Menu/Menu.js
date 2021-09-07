@@ -12,13 +12,11 @@ const Menu = () => {
     <div className='menu__wrap'>
       <div className='tabs__container'>
         {MenuData.map((tab, index) =>
-          <div
-            key={index} >
-            <Tab
-              to={`${url}/${tab.path}`}
-              title={tab.title}
-            />
-          </div>
+          <Tab
+            key={index}
+            to={`${url}/${tab.path}`}
+            title={tab.title}
+          />
         )}
       </div>
     </div>
