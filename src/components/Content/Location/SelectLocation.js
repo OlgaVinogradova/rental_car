@@ -13,7 +13,7 @@ const SelectLocation = () => {
   const availableAdress = LocationData.cities.find((c) => c.name === selectedCity);
 
   return (
-    <div>
+    <div className='content__select'>
       <div className='select'>
         <label><Text>Город</Text> </label>
         <div className='datalist'>
@@ -21,10 +21,9 @@ const SelectLocation = () => {
             autoСomplete="off"
             list="sities-list"
             onChange={(e) => setSelectedCity(e.target.value)}
-            type='text'
+            type='search'
             placeholder='Начните вводить город...'
           />
-
           <datalist id='sities-list'>
             {LocationData.cities.map((value, key) => {
               return (
@@ -43,7 +42,7 @@ const SelectLocation = () => {
           <input
             list='adress-list'
             onChange={(e) => setSelectedAdress(e.target.value)}
-            type='text'
+            type='search'
             placeholder='Начните вводить пункт...'
           />
           <datalist id='adress-list'>

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='name'>Need for drive</div>
-      <div className='location'>
+      <div className='header__location'>
         <LocationIcons />
         <span className='location__name'>Ульяновск</span>
       </div>

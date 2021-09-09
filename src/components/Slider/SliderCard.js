@@ -16,7 +16,7 @@ const SliderCard = ({ imgPath, title, text, btnColor, btnColorHover }) => {
 
     <div className='slider__img' style={stylesImg}>
       <div className='sliderCard_content'>
-        <div className='content'>
+        <div className='content__slider'>
           <div className='content__title'>{title}</div>
           <div className='content__subtitle'>
             {text}

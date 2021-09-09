@@ -1,7 +1,6 @@
 import React from 'react'
-import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import Menu from '../Menu/Menu'
+import Breadcrumbs from '../Breadcrumbs/Breadcrumbs'
 import OrderContent from '../OrderContent/OrderContent'
 
 import './OrderPage.scss'
@@ -10,9 +9,8 @@ const OrderPage = () => {
   return (
     <div className='op__wrap'>
       <Header />
-      <Menu />
+      <Breadcrumbs />
       <OrderContent />
-      <Footer />
     </div>
   )
 }

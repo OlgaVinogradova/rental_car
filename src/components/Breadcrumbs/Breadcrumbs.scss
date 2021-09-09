@@ -4,26 +4,30 @@
   letter-spacing: 1px;
 }
 
-.menu__wrap {
+.breadcrumbs__wrap {
   display: flex;
   border-bottom: 1px solid #EEEEEE;
   border-top: 1px solid #EEEEEE;
-  width: 100vw; 
+  width: 100vw;
 }
 
-.tabs__container {
+.breadcrumbs__container {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   margin: 0 16px 0 16px;
-  width: 100vw;
+  min-width: 350px;
+  overflow-x: scroll;
+  --webkit-overflow-scrolling: touch;
   height: 32px;
 
   .tab {
     display: flex;
-  } 
+  }
 }
+
+
 
 .triangle {
   margin: 0 4px;
@@ -50,7 +54,6 @@
   height: 8px;
   fill: #999999;
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 

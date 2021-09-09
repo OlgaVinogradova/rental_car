@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouteMatch } from 'react-router-dom';
-import { MenuData } from './MenuData';
-import './Menu.scss'
+import { BreadcrumbsData } from './BreadcrumbsData';
+import './Breadcrumbs.scss'
 import Tab from './Tab';
 
 const Menu = () => {
@@ -9,9 +9,9 @@ const Menu = () => {
   let { url } = useRouteMatch();
 
   return (
-    <div className='menu__wrap'>
-      <div className='tabs__container'>
-        {MenuData.map((tab, index) =>
+    <div className='breadcrumbs__wrap'>
+      <div className='breadcrumbs__container'>
+        {BreadcrumbsData.map((tab, index) =>
           <Tab
             key={index}
             to={`${url}/${tab.path}`}

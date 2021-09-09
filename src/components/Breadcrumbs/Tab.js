@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import TriangleRight from '../svg/triangleRight';
-import './Menu.scss'
+import './Breadcrumbs.scss'
 
 const Tab = ({ to, title }) => {
   return (

@@ -1,4 +1,4 @@
-export const MenuData = [
+export const BreadcrumbsData = [
   {
     title: 'Местоположение',
     path: 'location'
