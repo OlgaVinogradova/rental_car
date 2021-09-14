@@ -54,6 +54,7 @@ Input.defaultProps = {
   className: '',
   label: '',
   error: '',
+  id: ''
 };
 
 export default Input;
