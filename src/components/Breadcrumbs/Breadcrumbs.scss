@@ -18,7 +18,8 @@
   align-items: center;
   margin: 0 16px 0 16px;
   min-width: 350px;
-  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow-x: auto;
   --webkit-overflow-scrolling: touch;
   height: 32px;
 
@@ -57,22 +58,24 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-  .menu__wrap {
+  .breadcrumbs__wrap {
     margin: 0 -40px 0 -152px;
   }
   
-  .tabs__container {
+  .breadcrumbs__container {
     margin: 0 40px 0 152px;
+    overflow: hidden;
   }
 }
 
 @media screen and (min-width: 1024px) {
 
-  .menu__wrap {
+  .breadcrumbs__wrap {
     margin: 0 -40px 0 -128px;
   }
   
-  .tabs__container {
+  .breadcrumbs__container {
     margin: 0 40px 0 128px;
+    overflow: hidden;
   }
 }

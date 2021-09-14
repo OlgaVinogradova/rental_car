@@ -13,7 +13,9 @@ const BookingLocation = () => {
         <div className='order__data'>
           <Text>Пункт выдачи</Text>
           <div className="dots"></div>
-          <Text className="text-small"><p>Ульяновск,</p>Нариманова 42</Text>
+          <Text className="text-small">
+            <p>Ульяновск,</p>
+            Нариманова 42</Text>
         </div>
       </div>
       <div className='prise'>

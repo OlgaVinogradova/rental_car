@@ -6,7 +6,7 @@ import './Breadcrumbs.scss'
 const Tab = ({ to, title }) => {
   return (
     <div className='tab'>
-      <Link to={to} className='tab__link'>
+      <Link to={to || '/'} className='tab__link'>
         <span className='tab__title'>{title}</span>
       </Link>
       <div className='triangle'>
