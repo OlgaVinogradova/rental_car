@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { PagesData } from '../helper/PagesData';
 import Inst from '../svg/inst';
@@ -30,13 +29,12 @@ const Navbar = () => {
           <ul className='menu__list'>
             {PagesData.map((link, index) =>
               <li className='menu__items' key={index}>
-                <Link
+                <div
                   className='menu__link'
-                  to={link.path}
                   onClick={closeMenu}
                 >
                   {link.name}
-                </Link>
+                </div>
               </li>)}
           </ul>
           <div className='menu__contacts'>

@@ -1,0 +1,22 @@
+.op__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  min-width: 320px;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .op__wrap {
+    margin: 0 64px 0 152px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .op__wrap {
+    margin: 0 64px 0 128px;
+  }
+}
