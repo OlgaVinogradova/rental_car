@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { PagesData } from '../helper/PagesData';
+import { PagesData } from '../Slider/PagesData';
 import Inst from '../svg/inst';
 import Facebook from '../svg/facebook';
 import Telegram from '../svg/telegram';
