@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { PagesData } from '../helper/PagesData';
+import { PagesData } from './PagesData';
 import SliderCard from './SliderCard';
 import './Carousel.scss'
 

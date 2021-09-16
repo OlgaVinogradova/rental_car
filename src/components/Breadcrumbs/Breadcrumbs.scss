@@ -31,7 +31,7 @@
 
 
 .triangle {
-  margin: 0 4px;
+  margin: 0 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,9 +50,13 @@
   }
 }
 
+.active {
+  color: #0EC261;
+}
+
 .trglIcon {
-  width: 6px;
-  height: 8px;
+  width: 16px;
+  height: 12px;
   fill: #999999;
 }
 

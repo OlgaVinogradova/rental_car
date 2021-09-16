@@ -17,7 +17,7 @@ const MainPages = () => {
         </div>
       </div>
       <div className='mp__btn'>
-        <Link to='/orderpage'>
+        <Link to='/location'>
           <Button className='btn'>Забронировать</Button>
         </Link>
       </div>

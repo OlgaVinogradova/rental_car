@@ -6,7 +6,7 @@ import Button from '../../button/Button';
 import '../booking.scss'
 import { Link } from 'react-router-dom';
 
-const BookingLocation = () => {
+const BookingModel = () => {
   return (
     <div className='booking'>
       <div className='booking__content'>
@@ -18,18 +18,25 @@ const BookingLocation = () => {
             <p>Ульяновск,</p>
             Нариманова 42</Text>
         </div>
+        <div className='order__data'>
+          <Text>Модель</Text>
+          <div className="dots"></div>
+          <Text className="text-small">
+            <p>Hyndai,</p>
+            i30 N,</Text>
+        </div>
       </div>
       <div className='prise'>
-        Цена: от 8 000 до 12 000 ₽
+        Цена: от 10 000 до 32 000
       </div>
       <div className='btn__booking'>
         <Link to='/model'>
           <Button className='btn'
-          >Выбрать модель</Button>
+          >Дополнительно</Button>
         </Link>
       </div>
     </div>
   )
 }
 
-export default BookingLocation
+export default BookingModel

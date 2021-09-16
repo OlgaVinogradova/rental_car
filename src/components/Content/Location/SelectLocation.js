@@ -3,6 +3,7 @@ import { LocationData } from './LocationData';
 import Text from '../../typography/Text';
 import '../content.scss'
 import Datalist from '../../DataList/Datalist';
+import axios from 'axios';
 
 
 
@@ -21,6 +22,28 @@ const SelectLocation = () => {
 
   const onChangeAdress = (e) => setSelectedAdress(e.target.value)
   const onChangeCity = (e) => setSelectedCity(e.target.value)
+
+  // const [categories, getCategories] = useState([]);
+  // useEffect(() => {
+  //   const apiUrl = 'https://api-factory.simbirsoft1.com/api/db/city/';
+  //   axios.get(apiUrl,
+  //     {
+  //       method: 'GET',
+  //       headers: {
+  //         'X-Api-Factory-Application-Id': "573dc006a04857a8235f523c"
+  //       }
+  //     })
+  //     .then((resp) => {
+  //       const allCity = resp.data;
+  //       getCategories(allCity);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+
+  // }, [getCategories]);
+  // console.log(categories)
+
 
   return (
     <div className='content__select'>

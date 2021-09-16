@@ -4,7 +4,7 @@ import SelectLocation from './SelectLocation'
 
 const ContentLocation = () => {
   return (
-    <div className='content__location'>
+    <div className='content__wrap'>
       <SelectLocation />
       <Maps />
     </div>

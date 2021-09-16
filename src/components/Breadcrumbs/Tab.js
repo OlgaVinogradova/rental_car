@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import TriangleRight from '../svg/triangleRight';
 import './Breadcrumbs.scss'
 
 const Tab = ({ to, title }) => {
   return (
     <div className='tab'>
-      <Link to={to || '/'} className='tab__link'>
+      <NavLink to={to || '/'} className='tab__link' activeClassName='active'>
         <span className='tab__title'>{title}</span>
-      </Link>
+      </NavLink>
       <div className='triangle'>
         <TriangleRight />
       </div>

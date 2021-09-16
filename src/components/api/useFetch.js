@@ -30,9 +30,11 @@ export const useFetch = (url, params = {}) => {
 
   // const [categories, getCategories] = useState([]);
   // useEffect(() => {
+        // const apiUrl = 'https://api.football-data.org/v2/competitions/';
   //   const apiUrl = 'https://api-factory.simbirsoft1.com/api/db/city';
   //   axios.get(apiUrl,
   //     {method: 'GET',
+          // headers: {'X-Auth-Token': "09c745fb9573438daaba0e0d971e0a04"}
   //       headers: {'X-Api-Factory-Application-Id': "573dc006a04857a8235f523c"}
   //     })
   //     .then((resp) => {

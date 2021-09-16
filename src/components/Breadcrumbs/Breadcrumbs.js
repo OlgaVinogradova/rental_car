@@ -14,7 +14,7 @@ const Menu = () => {
         {BreadcrumbsData.map((tab, index) =>
           <Tab
             key={index}
-            to={`${url}/${tab.path}`}
+            to={`/${tab.path}`}
             title={tab.title}
           />
         )}

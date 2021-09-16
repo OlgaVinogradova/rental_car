@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LocationIcons from '../svg/locationIcons';
 import './Header.scss';
 
 const Header = () => {
   return (
     <div className='header'>
-      <div className='name'>Need for drive</div>
+      <Link to='/' className='name'>Need for drive</Link>
       <div className='header__location'>
         <LocationIcons />
         <span className='location__name'>Ульяновск</span>
