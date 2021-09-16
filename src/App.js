@@ -1,30 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import MainPages from './components/pages/MainPages/MainPages';
-import Parking from './components/pages/Parking';
-import Insurance from './components/pages/Insurance';
-import Petrol from './components/pages/Petrol';
-import Service from './components/pages/Service';
-import Slider from './components/Slider/Slider';
+import HomePage from './components/HomePage/HomePage';
+import LocationPage from './components/LocationPage/LocationPage';
 
 import './App.scss';
+import Model from './components/Model/Model';
 
 function App() {
   return (
     <div className='wrapper'>
       <Router>
-
         <Navbar />
-        <div className='wrap__row'>
-          <MainPages />
-          <Slider />
-        </div>
         <Switch>
-          <Route path='/parking' component={Parking} />
-          <Route path='/insurance' component={Insurance} />
-          <Route path='/petrol' component={Petrol} />
-          <Route path='/service' component={Service} />
+          <Route path='/' exact component={HomePage} />
+          <Route path='/location' exact component={LocationPage} />
+          <Route path='/model' component={Model} />
         </Switch>
       </Router>
     </div>

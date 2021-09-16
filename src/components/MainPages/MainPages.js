@@ -1,7 +1,8 @@
 import React from 'react';
-import Footer from '../../Footer/Footer';
-import Header from '../../Header/Header';
-import Button from '../../button/Button';
+import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import Button from '../button/Button';
 import './MainPages.scss';
 
 const MainPages = () => {
@@ -16,7 +17,9 @@ const MainPages = () => {
         </div>
       </div>
       <div className='mp__btn'>
-        <Button className='btn'>Забронировать</Button>
+        <Link to='/location'>
+          <Button className='btn'>Забронировать</Button>
+        </Link>
       </div>
       <Footer />
     </div>
