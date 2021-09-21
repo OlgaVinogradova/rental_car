@@ -38,20 +38,26 @@ img {
   margin-bottom: 32px;
 }
 
+.model__wrap {
+  max-height: 23vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  --webkit-overflow-scrolling: touch;
+}
+
 .model {
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 736px;
 }
 
 .model__card {
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 368px;
+  width: 80vw;
   height: 224px;
   padding: 16px;
   border: 1px solid #EEEEEE;
@@ -88,12 +94,65 @@ img {
 .model__img {  
   background-repeat: no-repeat;
   background-position: right;
-  height: 116px;
+  background-size: contain;
+  height: 60%;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content__wrap {
+    margin: 32px 0;
+  }
+
+  .map {
+    margin: 0 16px 0 0;
+  }
+
+  .model__wrap {
+    max-height: 32vh;
+  }
+  
+  .model__card {
+    width: 35vw;
+  }
+  
+  .model__active {
+    border: 1px solid #0EC261;
+  }
+  
+  .model__name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #121212;
+  }
+  
+  .model__prise:after { 
+    content:" \20BD"; 
+  }
+  
+  .model__prise {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+  }
+
+}
+
 
 @media screen and (min-width: 1024px) {
   .content__wrap {
     margin: 32px 0;
+  }
+  
+  .model__wrap {
+    max-height: 464px;
+  }
+
+  .model__card {
+    width: 25vw;;
   }
 
   .map {

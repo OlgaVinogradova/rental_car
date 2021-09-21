@@ -21,9 +21,12 @@
   .radio:checked+div {  
     border: 3px solid #0EC261;
 
-    .custom-radio {
-      color:red;
+    ~.radio__text {
+      color: #121212;
     }
   }
-}
 
+  .radio__text {
+    color: #999999;
+}
+}

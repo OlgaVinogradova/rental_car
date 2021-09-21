@@ -1,21 +1,15 @@
-import React from 'react'
-import Header from '../Header/Header'
-import Breadcrumbs from '../Breadcrumbs/Breadcrumbs'
-import ContentModel from '../Content/ContentModel/ContentModel'
-import BookingModel from '../Booking/BookingModel'
+import React from 'react';
+import ContentModel from '../Content/ContentModel/ContentModel';
+import OrderPage from './OrderPage';
 
-import './OrderPage.scss';
+import './OrderPage.scss'
+
 
 const Model = () => {
   return (
-    <div className='op__wrap'>
-      <Header />
-      <Breadcrumbs />
-      <div className='content'>
-        <ContentModel />
-        <BookingModel />
-      </div>
-    </div>
+    <OrderPage>
+      <ContentModel />
+    </OrderPage>
   )
 }
 

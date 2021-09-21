@@ -13,7 +13,7 @@ const ModelCard = ({
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   return (
-    <div role="button"
+    <div role="button" className='model__button'
       onClick={handleClick}>
       <div
         className={!click ? 'model__card' : 'model__card model__active'}>

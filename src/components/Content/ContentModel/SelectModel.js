@@ -28,17 +28,18 @@ const SelectModel = () => {
         <RadioButton onChange={onChangeEconom}><Text>Эконом</Text></RadioButton>
         <RadioButton onChange={onChangePrem}><Text>Премиум</Text></RadioButton>
       </div >
-
-      <div className='model'
-      >
-        {ModelData.map((model, index) =>
-          <div key={index}>
-            <ModelCard
-              imgPath={model.imgPath}
-              prise={model.prise}
-              name={model.name} />
-          </div>
-        )}
+      <div className='model__wrap'>
+        <div className='model'
+        >
+          {ModelData.map((model, index) =>
+            <div key={index}>
+              <ModelCard
+                imgPath={model.imgPath}
+                prise={model.prise}
+                name={model.name} />
+            </div>
+          )}
+        </div>
       </div>
     </div >
   )

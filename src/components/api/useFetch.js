@@ -10,17 +10,14 @@ export const useFetch = (url, params = {}) => {
   const queryString = ObjectToQueryString(params)
 
   useEffect(() => {
-    setTimeout(() => {
-      axios.get(`${url}${queryString}`, key).then((res) => {
-        const allLeagues = res.data;
-        setData(allLeagues)
-        setIsLoading(false)
-      }).catch((error) => {
-        setIsError(true)
-        setIsLoading(false)
-      })
-
-    }, 2000);
+    axios.get(`${url}${queryString}`, key).then((res) => {
+      const allLeagues = res.data;
+      setData(allLeagues)
+      setIsLoading(false)
+    }).catch((error) => {
+      setIsError(true)
+      setIsLoading(false)
+    })
   }, [url])
 
   return [{ data, setData, isLoading, setIsLoading, isError, setIsError }]
