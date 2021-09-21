@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs'
-import BookingLocation from '../Booking/BookingLocation/BookingLocation'
+import BookingLocation from '../Booking/BookingLocation'
 import ContentLocation from '../Content/Location/ContentLocation'
 
-import './LocationPage.scss'
+import './OrderPage.scss'
 
 const LocationPage = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import Title from '../../typography/Title';
-import Text from '../../typography/Text';
-import Button from '../../button/Button';
+import Title from '../typography/Title';
+import Text from '../typography/Text';
+import Button from '../button/Button';
 
-import '../booking.scss'
+import './booking.scss'
 import { Link } from 'react-router-dom';
 
 const BookingModel = () => {
@@ -30,7 +30,7 @@ const BookingModel = () => {
         Цена: от 10 000 до 32 000
       </div>
       <div className='btn__booking'>
-        <Link to='/model'>
+        <Link to='/option'>
           <Button className='btn'
           >Дополнительно</Button>
         </Link>

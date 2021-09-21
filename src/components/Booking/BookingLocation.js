@@ -1,9 +1,9 @@
 import React from 'react';
-import Title from '../../typography/Title';
-import Text from '../../typography/Text';
-import Button from '../../button/Button';
+import Title from '../typography/Title';
+import Text from '../typography/Text';
+import Button from '../button/Button';
 
-import '../booking.scss'
+import './booking.scss'
 import { Link } from 'react-router-dom';
 
 const BookingLocation = () => {

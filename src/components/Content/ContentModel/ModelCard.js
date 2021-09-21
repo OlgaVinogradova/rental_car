@@ -16,7 +16,7 @@ const ModelCard = ({
     <div role="button"
       onClick={handleClick}>
       <div
-        className={!click ? 'model__card' : 'model__card active'}>
+        className={!click ? 'model__card' : 'model__card model__active'}>
         <div>
           <div className='model__name'>{name}</div>
           <div className='model__prise'>{prise}</div>

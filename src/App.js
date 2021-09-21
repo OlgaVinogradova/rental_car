@@ -2,10 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './components/HomePage/HomePage';
-import LocationPage from './components/LocationPage/LocationPage';
+import LocationPage from './components/OrderPage/LocationPage';
+import Model from './components/OrderPage/Model';
+import Options from './components/OrderPage/Options';
 
 import './App.scss';
-import Model from './components/Model/Model';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path='/' exact component={HomePage} />
           <Route path='/location' exact component={LocationPage} />
           <Route path='/model' component={Model} />
+          <Route path='/option' component={Options} />
         </Switch>
       </Router>
     </div>
