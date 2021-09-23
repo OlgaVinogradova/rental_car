@@ -5,13 +5,13 @@ import Header from '../Header/Header'
 
 import './OrderPage.scss';
 
-const OrderBlank = ({ children }) => {
+const OrderBlank = () => {
   return (
     <div className='op__wrap'>
       <Header />
       <div className='breadcrumbs__wrap'>
         <div className='breadcrumbs__container'>
-          Заказ номер RU58491823
+          <span className='bc__text'>Заказ номер RU58491823</span>
         </div>
       </div>
       <div className='content'>

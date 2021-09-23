@@ -8,8 +8,9 @@ import '../content.scss';
 const ContentOrderBlank = () => {
   return (
     <div className='content__wrap'>
+      <div className='orderBlank__text'>Ваш заказ подтверждён</div>
       <div className='car'>
-        <div className='orderBlank__text'>Ваш заказ подтверждён</div>
+
         <div className='order__param'>
           <div className='car__model'>Hyndai, i30 N
           </div>
