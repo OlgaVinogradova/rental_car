@@ -6,7 +6,7 @@ import Button from '../button/Button';
 import './booking.scss'
 import { Link } from 'react-router-dom';
 
-const BookingOption = () => {
+const BookingOrderBlank = () => {
   return (
     <div className='booking'>
       <div className='booking__content'>
@@ -55,13 +55,11 @@ const BookingOption = () => {
         Цена: 16 000
       </div>
       <div className='btn__booking'>
-        <Link to='/subtotal'>
-          <Button className='btn'
-          >Итого</Button>
-        </Link>
+        <Button className='btn exit__btn'
+        >Отменить</Button>
       </div>
     </div>
   )
 }
 
-export default BookingOption
+export default BookingOrderBlank

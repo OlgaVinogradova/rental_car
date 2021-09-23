@@ -5,8 +5,12 @@ import HomePage from './components/HomePage/HomePage';
 import LocationPage from './components/OrderPage/LocationPage';
 import Model from './components/OrderPage/Model';
 import Options from './components/OrderPage/Options';
+import Subtotal from './components/OrderPage/Subtotal';
 
 import './App.scss';
+import Confirmation from './components/Content/ContentSubtotal/Confirmation';
+import OrderBlank from './components/OrderPage/OrderBlank';
+
 
 
 function App() {
@@ -19,6 +23,9 @@ function App() {
           <Route path='/location' exact component={LocationPage} />
           <Route path='/model' component={Model} />
           <Route path='/option' component={Options} />
+          <Route path='/subtotal' component={Subtotal} />
+          <Route path='/confirmation' component={Confirmation} />
+          <Route path='/orderBlank' component={OrderBlank} />
         </Switch>
       </Router>
     </div>
