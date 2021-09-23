@@ -11,7 +11,7 @@ const RadioButton = ({ children, onChange, value, checked }) => {
         type="radio"
         onChange={onChange}
         checked={checked} />
-      <div></div><span className='radio__text'>{children}</span>
+      <div className='radio__circle'></div><div className='radio__text'>{children}</div>
     </label>
   );
 };

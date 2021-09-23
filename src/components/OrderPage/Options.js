@@ -5,19 +5,15 @@ import BookingOption from '../Booking/BookingOption'
 
 import './OrderPage.scss';
 import ContentOption from '../Content/ContentOptions/ContentOption';
+import OrderPage from './OrderPage';
 
 
 const Options = () => {
   return (
-    <div className='op__wrap'>
-      <Header />
-      <Breadcrumbs />
-      <div className='content'>
-        <ContentOption />
-        <BookingOption />
-
-      </div>
-    </div>
+    <OrderPage>
+      <ContentOption />
+      <BookingOption />
+    </OrderPage>
   )
 }
 

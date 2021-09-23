@@ -10,6 +10,10 @@
   margin-bottom: 32px;
 }
 
+.category__select {
+  margin-bottom: 32px;
+}
+
 .select {
   display: flex;
   align-items: center;
@@ -35,11 +39,18 @@ img {
 
 .horizontal__radioGrup {
   display: flex;
-  margin-bottom: 32px;
 }
 
+.vertical__radioGrup {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+
 .model__wrap {
-  max-height: 23vh;
+  max-height: 25vh;
   overflow-x: hidden;
   overflow-y: auto;
   --webkit-overflow-scrolling: touch;
@@ -106,10 +117,6 @@ img {
   .map {
     margin: 0 16px 0 0;
   }
-
-  .model__wrap {
-    max-height: 32vh;
-  }
   
   .model__card {
     width: 35vw;
@@ -148,7 +155,7 @@ img {
   }
   
   .model__wrap {
-    max-height: 464px;
+    max-height: 65vh;
   }
 
   .model__card {

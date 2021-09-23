@@ -12,7 +12,6 @@ const OrderPage = ({ children }) => {
       <Breadcrumbs />
       <div className='content'>
         {children}
-        <Booking />
       </div>
     </div>
   )

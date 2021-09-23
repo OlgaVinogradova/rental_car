@@ -23,11 +23,13 @@ const SelectModel = () => {
 
   return (
     <div className='content__select'>
-      <div className='horizontal__radioGrup'>
-        <RadioButton onChange={onChangeAll}><Text> Все модели</Text></RadioButton>
-        <RadioButton onChange={onChangeEconom}><Text>Эконом</Text></RadioButton>
-        <RadioButton onChange={onChangePrem}><Text>Премиум</Text></RadioButton>
-      </div >
+      <div className='category__select'>
+        <div className='horizontal__radioGrup'>
+          <RadioButton onChange={onChangeAll}>Все модели</RadioButton>
+          <RadioButton onChange={onChangeEconom}>Эконом</RadioButton>
+          <RadioButton onChange={onChangePrem}>Премиум</RadioButton>
+        </div >
+      </div>
       <div className='model__wrap'>
         <div className='model'
         >
