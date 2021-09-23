@@ -1,0 +1,168 @@
+.content__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 16px 0;
+}
+
+.content__select {
+  margin-bottom: 32px;
+}
+
+.category__select {
+  margin-bottom: 32px;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+label {
+  margin: 8px 8px 8px 0;
+}
+
+.select:first-child label {
+  margin-top: 0;
+  padding-top: 8px;
+}
+
+.content__text {
+  margin-bottom: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.horizontal__radioGrup {
+  display: flex;
+}
+
+.vertical__radioGrup {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.model__wrap {
+  max-height: 25vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  --webkit-overflow-scrolling: touch;
+}
+
+.model {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.model__card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80vw;
+  height: 224px;
+  padding: 16px;
+  border: 1px solid #EEEEEE;
+
+  &:hover {
+    border: 1px solid #999999;
+  }
+}
+
+.model__active {
+  border: 1px solid #0EC261;
+}
+
+.model__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #121212;
+}
+
+.model__prise:after { 
+  content:" \20BD"; 
+}
+
+.model__prise {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.model__img {  
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 60%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content__wrap {
+    margin: 32px 0;
+  }
+
+  .map {
+    margin: 0 16px 0 0;
+  }
+  
+  .model__card {
+    width: 35vw;
+  }
+  
+  .model__active {
+    border: 1px solid #0EC261;
+  }
+  
+  .model__name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #121212;
+  }
+  
+  .model__prise:after { 
+    content:" \20BD"; 
+  }
+  
+  .model__prise {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  .content__wrap {
+    margin: 32px 0;
+  }
+  
+  .model__wrap {
+    max-height: 65vh;
+  }
+
+  .model__card {
+    width: 25vw;;
+  }
+
+  .map {
+    margin: 0 16px 0 0;
+  }
+}
