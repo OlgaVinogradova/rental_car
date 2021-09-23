@@ -1,12 +1,11 @@
-import React from 'react';
-import SliderCard from './SliderCard';
-
+import React from 'react'
 import './Slider.scss'
+import Carousel from './Carousel'
 
 const Slider = () => {
   return (
     <div className='slider_wrap'>
-      <SliderCard />
+      <Carousel />
     </div>
   )
 }

@@ -1,30 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import MainPages from './components/pages/MainPages/MainPages';
-import Parking from './components/pages/Parking';
-import Insurance from './components/pages/Insurance';
-import Petrol from './components/pages/Petrol';
-import Service from './components/pages/Service';
-import Slider from './components/Slider/Slider';
+import HomePage from './components/HomePage/HomePage';
+import LocationPage from './components/OrderPage/LocationPage';
+import Model from './components/OrderPage/Model';
+import Options from './components/OrderPage/Options';
+import Subtotal from './components/OrderPage/Subtotal';
 
 import './App.scss';
+import Confirmation from './components/Content/ContentSubtotal/Confirmation';
+import OrderBlank from './components/OrderPage/OrderBlank';
+
+
 
 function App() {
   return (
     <div className='wrapper'>
       <Router>
-
         <Navbar />
-        <div className='wrap__row'>
-          <MainPages />
-          <Slider />
-        </div>
         <Switch>
-          <Route path='/parking' component={Parking} />
-          <Route path='/insurance' component={Insurance} />
-          <Route path='/petrol' component={Petrol} />
-          <Route path='/service' component={Service} />
+          <Route path='/' exact component={HomePage} />
+          <Route path='/location' exact component={LocationPage} />
+          <Route path='/model' component={Model} />
+          <Route path='/option' component={Options} />
+          <Route path='/subtotal' component={Subtotal} />
+          <Route path='/confirmation' component={Confirmation} />
+          <Route path='/orderBlank' component={OrderBlank} />
         </Switch>
       </Router>
     </div>
